@@ -1,0 +1,35 @@
+/* root */
+:root {
+    /* style */
+    --style-text: hsl(204, 11%, 90%);
+    --style-light: hsl(204, 11%, 25%);
+    --style-dark: hsl(204, 11%, 20%);
+    --style-foreg: hsl(204, 11%, 15%);
+    --style-backg: hsl(204, 11%, 10%);
+    --style-blur: hsla(204, 11%, 10%, 90%);
+    --style-black: hsl(204, 11%, 0%);
+    /* dark colors */
+    --red: hsl(0, 50%, 25%);
+    --orange: hsl(35, 50%, 25%);
+    --yellow: hsl(60, 50%, 25%);
+    --green: hsl(100, 50%, 25%);
+    --turquoise: hsl(180, 50%, 25%);
+    --blue: hsl(200, 50%, 25%);
+    --purple: hsl(280, 50%, 25%);
+    --pink: hsl(300, 50%, 25%);
+    /* light colors */
+    --red-light: hsl(0, 50%, 65%);
+    --orange-light: hsl(35, 50%, 65%);
+    --yellow-light: hsl(60, 50%, 65%);
+    --green-light: hsl(100, 50%, 65%);
+    --turquoise-light: hsl(180, 50%, 65%);
+    --blue-light: hsl(200, 50%, 65%);
+    --purple-light: hsl(280, 50%, 65%);
+    --pink-light: hsl(300, 50%, 65%);
+    /* spec */
+    --radius: 0.7rem;
+    --rgbset: #808080;
+    --hidden: hsla(204, 11%, 0%, 0);
+    --hover: var(--style-light);
+    --select: var(--style-dark);
+}
