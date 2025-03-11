@@ -1,4 +1,4 @@
-/* https://cinny.in */
+/* https://app.cinny.in */
 /* dark theme */
 .dark-theme,
 .butter-theme {
@@ -11,14 +11,14 @@
     --bg-surface-hover: var(--hover);
     --bg-surface-active: var(--select);
     --bg-surface-border: var(--style-foreg);
-    --bg-primary: rgb(189, 182, 236);
-    --bg-primary-hover: rgba(189, 182, 236, .8);
-    --bg-primary-active: rgba(189, 182, 236, 70%);
-    --bg-primary-border: rgba(189, 182, 236, 38%);
-    --bg-positive: rgb(133, 224, 186);
-    --bg-positive-hover: rgba(133, 224, 186, 8%);
-    --bg-positive-active: rgba(133, 224, 186, 15%);
-    --bg-positive-border: rgba(133, 224, 186, 40%);
+    --bg-primary: var(--style-text);
+    --bg-primary-hover: var(--style-text);
+    --bg-primary-active: var(--style-text);
+    --bg-primary-border: var(--style-light);
+    --bg-positive: var(--green-light);
+    --bg-positive-hover: var(--hover);
+    --bg-positive-active: var(--select);
+    --bg-positive-border: var(--style-light);
     --bg-caution: rgb(227, 186, 145);
     --bg-caution-hover: rgba(227, 186, 145, 8%);
     --bg-caution-active: rgba(227, 186, 145, 15%);
@@ -50,7 +50,7 @@
     --tc-danger-low: rgba(230, 157, 157, 60%);
     --tc-code: #e565b1;
     --tc-link: hsl(213deg 100% 80%);
-    --tc-badge: black;
+    --tc-badge: var(--style-black);
     --ic-surface-high: rgb(255, 255, 255);
     --ic-surface-normal: rgba(255, 255, 255, 84%);
     --ic-surface-low: rgba(255, 255, 255, 64%);
@@ -58,7 +58,7 @@
     --ic-primary-normal: var(--tc-primary-high);
     --ic-primary-low: var(--tc-primary-high);
     --ic-positive-high: rgba(133, 224, 186);
-    --ic-positive-normal: rgba(133, 224, 186, 80%);
+    --ic-positive-normal: var(--green-light);
     --ic-caution-high: rgba(227, 186, 145);
     --ic-caution-normal: rgba(227, 186, 145, 80%);
     --ic-danger-high: rgba(230, 157, 157);
