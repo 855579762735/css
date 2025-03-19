@@ -7,3 +7,6 @@ You can use a browser extension like [Stylus](https://addons.mozilla.org/en-CA/f
 The `manifest.json` file is the only thing related to the theme in Firefox that matches the `root.css`. You can load this file into Firefox without uploading it to the store
 using the `about:debugging` url. My theme is available [here](https://addons.mozilla.org/en-US/firefox/addon/poeko-theme/), however if you use a custom css root and don't want
 to use the `about:debugging` url every time Firefox boots you'll have to upload your `manifest.json` as a `.zip` to Firefox store.
+### Home Assistant Theme
+Please refer to the Home Assistant official documentation ..<br>
+https://www.home-assistant.io/integrations/frontend/#themes
