@@ -23,11 +23,11 @@
     --bg-caution-hover: rgba(227, 186, 145, 8%);
     --bg-caution-active: rgba(227, 186, 145, 15%);
     --bg-caution-border: rgba(227, 186, 145, 40%);
-    --bg-danger: rgb(230, 157, 157);
-    --bg-danger-hover: rgba(230, 157, 157, 5%);
-    --bg-danger-active: rgba(230, 157, 157, 10%);
-    --bg-danger-border: rgba(230, 157, 157, 20%);
-    --bg-tooltip: #000;
+    --bg-danger: var(--red-light);
+    --bg-danger-hover: var(--hover);
+    --bg-danger-active: var(--select);
+    --bg-danger-border: var(--red-light);
+    --bg-tooltip: var(--style-black);
     --bg-badge: hsl(0, 0%, 75%);
     --bg-ping: hsla(137deg, 100%, 38%, 40%);
     --bg-ping-hover: hsla(137deg, 100%, 38%, 50%);
@@ -46,10 +46,10 @@
     --tc-caution-normal: rgb(227, 186, 145, 80%);
     --tc-caution-low: rgb(227, 186, 145, 60%);
     --tc-danger-high: var(--bg-danger);
-    --tc-danger-normal: rgba(230, 157, 157, 88%);
-    --tc-danger-low: rgba(230, 157, 157, 60%);
-    --tc-code: #e565b1;
-    --tc-link: hsl(213deg 100% 80%);
+    --tc-danger-normal: var(--red-light);
+    --tc-danger-low: var(--red-light);
+    --tc-code: var(--pink-light);
+    --tc-link: var(--hyperlink);
     --tc-badge: var(--style-black);
     --ic-surface-high: rgb(255, 255, 255);
     --ic-surface-normal: rgba(255, 255, 255, 84%);
@@ -62,7 +62,7 @@
     --ic-caution-high: rgba(227, 186, 145);
     --ic-caution-normal: rgba(227, 186, 145, 80%);
     --ic-danger-high: rgba(230, 157, 157);
-    --ic-danger-normal: rgba(230, 157, 157, .7);
+    --ic-danger-normal: var(--red-light);
     --mx-uc-1: var(--blue-light);
     --mx-uc-2: var(--pink-light);
     --mx-uc-3: var(--turquoise-light);
@@ -71,7 +71,7 @@
     --mx-uc-6: var(--yellow-light);
     --mx-uc-7: var(--purple-light);
     --mx-uc-8: var(--green-light);
-    --bg-overlay: rgba(0, 0, 0, 60%);
+    --bg-overlay: var(--style-blur);
     --bg-overlay-low: rgba(0, 0, 0, 80%);
     --bs-popup: 0 0 16px rgba(0, 0, 0, 25%);
 }
@@ -80,12 +80,12 @@
     --oq6d070: var(--style-backg);
     --oq6d071: var(--hover);
     --oq6d072: var(--select);
-    --oq6d073: var(--style-backg);
+    --oq6d073: var(--style-foreg);
     --oq6d074: var(--style-text);
     --oq6d075: var(--style-backg);
     --oq6d076: var(--hover);
     --oq6d077: var(--select);
-    --oq6d078: var(--style-light);
+    --oq6d078: var(--style-foreg);
     --oq6d079: var(--style-text);
     --oq6d07a: var(--style-foreg);
     --oq6d07b: var(--hover);
