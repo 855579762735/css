@@ -32,4 +32,5 @@
     --hidden: hsla(204, 11%, 0%, 0);
     --hover: var(--style-light);
     --select: var(--style-dark);
+    --hyperlink: var(--blue-light)
 }
