@@ -1,0 +1,145 @@
+:root { /* main theme setup */
+
+    /* style */
+    --style-text: hsl(204, 11%, 90%);
+    --style-light: hsl(204, 11%, 25%);
+    --style-dark: hsl(204, 11%, 20%);
+    --style-foreg: hsl(204, 11%, 15%);
+    --style-backg: hsl(204, 11%, 10%);
+    --style-blur: hsla(204, 11%, 10%, 90%);
+    --style-black: hsl(204, 11%, 0%);
+
+    /* dark colors */
+    --red: hsl(0, 50%, 25%);
+    --orange: hsl(35, 50%, 25%);
+    --yellow: hsl(60, 50%, 25%);
+    --green: hsl(100, 50%, 25%);
+    --turquoise: hsl(180, 50%, 25%);
+    --blue: hsl(200, 50%, 25%);
+    --purple: hsl(280, 50%, 25%);
+    --pink: hsl(300, 50%, 25%);
+
+    /* light colors */
+    --red-light: hsl(0, 50%, 65%);
+    --orange-light: hsl(35, 50%, 65%);
+    --yellow-light: hsl(60, 50%, 65%);
+    --green-light: hsl(100, 50%, 65%);
+    --turquoise-light: hsl(180, 50%, 65%);
+    --blue-light: hsl(200, 50%, 65%);
+    --purple-light: hsl(280, 50%, 65%);
+    --pink-light: hsl(300, 50%, 65%);
+
+    /* spec */
+    --radius: 0.7rem;
+    --rgbset: #808080;
+    --hidden: hsla(204, 11%, 0%, 0);
+    --hover: var(--style-light);
+    --select: var(--style-dark);
+    --hyperlink: var(--blue-light)
+
+}
+
+/* logseq */
+
+.dark-theme,
+html[data-theme="dark"] { /* dark theme colors */
+
+  --ls-primary-background-color: var(--style-backg);
+  --ls-secondary-background-color: var(--style-foreg);
+  --ls-tertiary-background-color: var(--style-foreg);
+  --ls-quaternary-background-color: var(--style-light);
+  --ls-quinary-background-color: var(--style-backg);
+
+  --ls-active-primary-color: var(--hover);
+  --ls-active-secondary-color: var(--select);
+
+  --ls-primary-text-color: var(--style-text);
+  --ls-secondary-text-color: var(--style-text);
+
+  --ls-search-background-color: var(--style-backg);
+  --ls-border-color: var(--style-light);
+  --ls-secondary-border-color: var(--style-dark);
+  --ls-menu-hover-color: var(--hover);
+  --ls-table-tr-even-background-color: var(--style-light);
+
+  --ls-head-text-color: var(--style-text);
+  --ls-title-text-color: var(--style-text);
+
+  --ls-link-text-color: var(--blue-light);
+  --ls-link-text-hover-color: var(--style-text);
+
+  --ls-link-ref-text-color: var(--blue-light);
+  --ls-link-ref-text-hover-color: var(--style-text);
+  --ls-block-ref-link-text-color: var(--blue-light);
+
+  --ls-tag-text-color: var(--blue-light);
+  --ls-tag-text-hover-color: var(--style-text);
+
+  --ls-block-bullet-border-color: var(--style-light);
+  --ls-block-bullet-color: var(--style-text);
+  --ls-block-highlight-color: var(--style-light);
+  --ls-block-properties-background-color: var(--style-light);
+
+  --ls-page-checkbox-color: var(--hidden);
+  --ls-page-checkbox-border-color: var(--style-light);
+
+  --ls-page-blockquote-color: var(--style-text);
+  --ls-page-blockquote-bg-color: var(--style-dark);
+  --ls-page-blockquote-border-color: var(--style-light);
+
+  --ls-page-inline-code-color: var(--style-text);
+  --ls-page-inline-code-bg-color: var(--style-light);
+
+  --ls-scrollbar-background-color: var(--style-foreg);
+  --ls-scrollbar-foreground-color: var(--style-dark);
+  --ls-scrollbar-thumb-hover-color: var(--style-light);
+
+  --ls-icon-color: var(--style-text);
+  --ls-search-icon-color: var(--style-text);
+  --ls-a-chosen-bg: var(--style-black);
+  --ls-right-sidebar-code-bg-color: var(--style-backg);
+  --ls-selection-background-color: var(--select);
+  --ls-slide-background-color: var(--style-backg);
+  --ls-guideline-color: var(--style-dark);
+
+  --color-yellow-500: var(--yellow);
+  --ls-highlight-color-yellow: var(--yellow);
+  --color-red-500: var(--red);
+  --ls-highlight-color-red: var(--red);
+  --color-pink-500: var(--pink);
+  --ls-highlight-color-pink: var(--pink);
+  --color-green-500: var(--green);
+  --ls-highlight-color-green: var(--green);
+  --color-blue-500: var(--blue);
+  --ls-highlight-color-blue: var(--blue);
+  --color-purple-500: var(--purple);
+  --ls-highlight-color-purple: var(--purple);
+  --color-gray-500: var(--rgbset);
+  --ls-highlight-color-gray: var(--rgbset);
+
+  /*--lx-gray-01: var(--style-backg);*/
+  /*--lx-gray-02: var(--style-foreg);*/
+  /*--rx-gray-03: var(--hover);*/
+  --rx-gray-04: var(--style-light);
+
+}
+
+.bg-orange-400 { /* orange background */
+    background-color: var(--orange-light);
+}
+
+.bg-green-600 { /* green background */
+    background-color: var(--green-light);
+}
+
+.bg-red-500 { /* red background */
+    background-color: var(--red-light);
+}
+
+.external-link { /* external link color */
+    color: var(--turquoise-light);
+}
+
+.external-link:hover { /* external link color while hovering */
+    color: var(--turquoise-light);
+}

@@ -1,0 +1,54 @@
+/*** Publishing: Hide things that aren't very useful for a read-only view */
+
+/** Hide page properties (public pages will always have public: true) */
+.content .pre-block { display: none; }
+
+/** Title */
+/* Make title non-editable */
+#main-container .page-title { pointer-events: none; }
+
+/** Hide useless sidebar stuff */
+.nav-header .whiteboard { display: none }
+.nav-header .flashcards-nav { display: none; }
+.nav-header .graph-view-nav { display: none; }
+/*.nav-header .journals-nav { display: none; }*/
+
+/** Header */
+/* Hide right side of header buttons */
+#head div.r { display: none; }
+
+/** All pages */
+/* Hide selection checkbox (nothing can be done with it) */
+.cp__all_pages table .selector { display: none; }
+/* Hide more columns (not that they don't work, they just don't seem very useful) */
+.cp__all_pages table .backlinks { display: none; }
+.cp__all_pages table .created-at { display: none; }
+/* Hide delete button */
+.cp__all_pages .actions .actions-wrap { display: none; }
+/* Hide more page modification options/things that don't work */
+.cp__all_pages .actions div.r { display: none; }
+/* Fix search bar spacing */
+.cp__all_pages .actions .search-wrap { margin-left: 0; padding-left: 0; }
+/* Removes the unlinked dropdown at the botton of pages */
+.references.mt-6.flex-1.flex-row{display: none;}
+
+/** Image */
+/* Remove delete button */
+a.delete { display: none; }
+/* Disable resizing */
+.resize { resize:none; }
+
+/** Hide graph settings */
+.graph-filters { display: none; }
+
+/** Hide recent pages */
+.nav-content-item.recent { display: none; }
+
+/* Hide context menu */
+#custom-context-menu { display: none; }
+
+/** Disable dragging of blocks */
+.ls-block > div > div > a:not(.block-control) { pointer-events: none; }
+
+/** Remove superfluous spacing on block embeds in Firefox */
+.block-content.inline { white-space: revert; }
