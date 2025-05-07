@@ -10,3 +10,9 @@ to use the `about:debugging` url every time Firefox boots you'll have to upload 
 ### Home Assistant Theme
 Please refer to the Home Assistant official documentation ..<br>
 https://www.home-assistant.io/integrations/frontend/#themes
+### Logseq Theme
+Using the same root configuration we can setup logseq to match everything. I've tried to make the `custom.css` simple, so this file only affects the dark theme. The `export.css` that I setup just hides things that aren't helpful in the html preview, it doesn't add any styling. If you have multiple graphs in LogSeq that you want to theme you can save the `custom.css` and `export.css` anywhere on your computer and then import the asset into each graphs `custom.css` and `export.css` by adding something like this line to them;
+```
+@import url('assets:////C:/Users/username/notes/custom.css');
+```
+Make sure to use the **full path** of the files and the correct filename for *export* or *custom*.
