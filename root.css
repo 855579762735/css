@@ -1,22 +1,22 @@
 /* root */
 :root {
     /* style */
-    --style-text: hsl(204, 11%, 90%);
-    --style-light: hsl(204, 11%, 25%);
-    --style-dark: hsl(204, 11%, 20%);
-    --style-foreg: hsl(204, 11%, 15%);
-    --style-backg: hsl(204, 11%, 10%);
-    --style-blur: hsla(204, 11%, 10%, 90%);
-    --style-black: hsl(204, 11%, 0%);
+    --style-text: hsl(204, 11%, 90%);       /* #e3e6e8 */
+    --style-light: hsl(204, 11%, 25%);      /* #394147 */
+    --style-dark: hsl(204, 11%, 20%);       /* #2d3439 */
+    --style-foreg: hsl(204, 11%, 15%);      /* #22272a */
+    --style-backg: hsl(204, 11%, 10%);      /* #171a1c */
+    --style-blur: hsla(204, 11%, 10%, 90%); /* #171a1c */
+    --style-black: hsl(204, 11%, 0%);       /* #000000 */
     /* dark colors */
-    --red: hsl(0, 50%, 25%);
-    --orange: hsl(35, 50%, 25%);
-    --yellow: hsl(60, 50%, 25%);
-    --green: hsl(100, 50%, 25%);
-    --turquoise: hsl(180, 50%, 25%);
-    --blue: hsl(200, 50%, 25%);
-    --purple: hsl(280, 50%, 25%);
-    --pink: hsl(300, 50%, 25%);
+    --red: hsl(0, 50%, 25%);                /* #602020 */
+    --orange: hsl(35, 50%, 25%);            /* #604520 */
+    --yellow: hsl(60, 50%, 25%);            /* #606020 */
+    --green: hsl(100, 50%, 25%);            /* #356020 */
+    --turquoise: hsl(180, 50%, 25%);        /* #206060 */
+    --blue: hsl(200, 50%, 25%);             /* #204a60 */
+    --purple: hsl(280, 50%, 25%);           /* #4a2060 */
+    --pink: hsl(300, 50%, 25%);             /* #602060 */
     /* light colors */
     --red-light: hsl(0, 50%, 65%);
     --orange-light: hsl(35, 50%, 65%);
