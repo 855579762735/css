@@ -18,14 +18,14 @@
     --purple: hsl(280, 50%, 25%);           /* #4a2060 */
     --pink: hsl(300, 50%, 25%);             /* #602060 */
     /* light colors */
-    --red-light: hsl(0, 50%, 65%);
-    --orange-light: hsl(35, 50%, 65%);
-    --yellow-light: hsl(60, 50%, 65%);
-    --green-light: hsl(100, 50%, 65%);
-    --turquoise-light: hsl(180, 50%, 65%);
-    --blue-light: hsl(200, 50%, 65%);
-    --purple-light: hsl(280, 50%, 65%);
-    --pink-light: hsl(300, 50%, 65%);
+    --red-light: hsl(0, 50%, 65%);          /* #d27979 */
+    --orange-light: hsl(35, 50%, 65%);      /* #d2ad79 */
+    --yellow-light: hsl(60, 50%, 65%);      /* #d2d279 */
+    --green-light: hsl(100, 50%, 65%);      /* #97d279 */
+    --turquoise-light: hsl(180, 50%, 65%);  /* #79d2d2 */
+    --blue-light: hsl(200, 50%, 65%);       /* #79b5d2 */
+    --purple-light: hsl(280, 50%, 65%);     /* #b579d2 */
+    --pink-light: hsl(300, 50%, 65%);       /* #d279d2 */
     /* spec */
     --radius: 0.7rem;
     --rgbset: #808080;
