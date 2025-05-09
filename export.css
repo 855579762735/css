@@ -1,54 +1,33 @@
-/*** Publishing: Hide things that aren't very useful for a read-only view */
+/* logseq export */
 
-/** Hide page properties (public pages will always have public: true) */
-.content .pre-block { display: none; }
+.content .pre-block { display: none; } /* hide page properties */
 
-/** Title */
-/* Make title non-editable */
-#main-container .page-title { pointer-events: none; }
+#main-container .page-title { pointer-events: none; } /* make title not editable */
 
-/** Hide useless sidebar stuff */
-.nav-header .whiteboard { display: none }
-.nav-header .flashcards-nav { display: none; }
-.nav-header .graph-view-nav { display: none; }
-/*.nav-header .journals-nav { display: none; }*/
+.nav-header .whiteboard { display: none } /* disable whiteboards */
+.nav-header .flashcards-nav { display: none; } /* disable flashcards */
+.nav-header .graph-view-nav { display: none; } /* disable graphs */
+/*.nav-header .journals-nav { display: none; } /* optionally hide journals */
 
-/** Header */
-/* Hide right side of header buttons */
-#head div.r { display: none; }
+#head div.r { display: none; } /* hide right side of header buttons */
 
-/** All pages */
-/* Hide selection checkbox (nothing can be done with it) */
-.cp__all_pages table .selector { display: none; }
-/* Hide more columns (not that they don't work, they just don't seem very useful) */
-.cp__all_pages table .backlinks { display: none; }
-.cp__all_pages table .created-at { display: none; }
-/* Hide delete button */
-.cp__all_pages .actions .actions-wrap { display: none; }
-/* Hide more page modification options/things that don't work */
-.cp__all_pages .actions div.r { display: none; }
-/* Fix search bar spacing */
-.cp__all_pages .actions .search-wrap { margin-left: 0; padding-left: 0; }
-/* Removes the unlinked dropdown at the botton of pages */
-.references.mt-6.flex-1.flex-row{display: none;}
+.cp__all_pages table .selector { display: none; } /* hide selection checkbox on all pages */
+.cp__all_pages table .backlinks { display: none; } /* hide more columns on all pages */
+.cp__all_pages table .created-at { display: none; } /* hide more columns on all pages */
+.cp__all_pages .actions .actions-wrap { display: none; } /* hide delete button on all pages */
+.cp__all_pages .actions div.r { display: none; } /* hide more page modification options/things that don't work */
+.cp__all_pages .actions .search-wrap { margin-left: 0; padding-left: 0; } /* fix search bar spacing */
+.references.mt-6.flex-1.flex-row{display: none;} /* removes the unlinked dropdown at the botton of pages */
 
-/** Image */
-/* Remove delete button */
-a.delete { display: none; }
-/* Disable resizing */
-.resize { resize:none; }
+a.delete { display: none; } /* remove delete button on images */
+.resize { resize:none; } /* disable resizing on images */
 
-/** Hide graph settings */
-.graph-filters { display: none; }
+.graph-filters { display: none; } /* hide graph settings */
 
-/** Hide recent pages */
-.nav-content-item.recent { display: none; }
+.nav-content-item.recent { display: none; } /* hide recent pages */
 
-/* Hide context menu */
-#custom-context-menu { display: none; }
+#custom-context-menu { display: none; } /* hide context menu */
 
-/** Disable dragging of blocks */
-.ls-block > div > div > a:not(.block-control) { pointer-events: none; }
+.ls-block > div > div > a:not(.block-control) { pointer-events: none; } /* disable dragging of blocks */
 
-/** Remove superfluous spacing on block embeds in Firefox */
-.block-content.inline { white-space: revert; }
+.block-content.inline { white-space: revert; } /* remove superfluous spacing on block embeds in firefox */
