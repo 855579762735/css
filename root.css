@@ -1,36 +1,44 @@
-/* root */
 :root {
-    /* style */
-    --style-text: hsl(204, 11%, 90%);       /* #e3e6e8 */
-    --style-light: hsl(204, 11%, 25%);      /* #394147 */
-    --style-dark: hsl(204, 11%, 20%);       /* #2d3439 */
-    --style-foreg: hsl(204, 11%, 15%);      /* #22272a */
-    --style-backg: hsl(204, 11%, 10%);      /* #171a1c */
-    --style-blur: hsla(204, 11%, 10%, 90%); /* #171a1c */
-    --style-black: hsl(204, 11%, 0%);       /* #000000 */
-    /* dark colors */
-    --red: hsl(0, 50%, 25%);                /* #602020 */
-    --orange: hsl(35, 50%, 25%);            /* #604520 */
-    --yellow: hsl(60, 50%, 25%);            /* #606020 */
-    --green: hsl(100, 50%, 25%);            /* #356020 */
-    --turquoise: hsl(180, 50%, 25%);        /* #206060 */
-    --blue: hsl(200, 50%, 25%);             /* #204a60 */
-    --purple: hsl(280, 50%, 25%);           /* #4a2060 */
-    --pink: hsl(300, 50%, 25%);             /* #602060 */
-    /* light colors */
-    --red-light: hsl(0, 50%, 65%);          /* #d27979 */
-    --orange-light: hsl(35, 50%, 65%);      /* #d2ad79 */
-    --yellow-light: hsl(60, 50%, 65%);      /* #d2d279 */
-    --green-light: hsl(100, 50%, 65%);      /* #97d279 */
-    --turquoise-light: hsl(180, 50%, 65%);  /* #79d2d2 */
-    --blue-light: hsl(200, 50%, 65%);       /* #79b5d2 */
-    --purple-light: hsl(280, 50%, 65%);     /* #b579d2 */
-    --pink-light: hsl(300, 50%, 65%);       /* #d279d2 */
+
     /* spec */
-    --radius: 0.7rem;
-    --rgbset: #808080;
-    --hidden: hsla(204, 11%, 0%, 0);
-    --hover: var(--style-light);
-    --select: var(--style-dark);
+    --dark: 35;
+    --light: 65;
+    --sat: 50;
+
+    /* style */
+    --style: hsl(204 11 0);
+    --style-text: hsl(from var(--style) h s 90);
+    --style-light: hsl(from var(--style) h s var(--light));
+    --style-dark: hsl(from var(--style) h s var(--dark));
+    --style-dark25: hsl(from var(--style) h s 25);
+    --style-dark20: hsl(from var(--style) h s 20);
+    --style-foreg: hsl(from var(--style) h s 15);
+    --style-backg: hsl(from var(--style) h s 10);
+    --style-blur: hsl(from var(--style-backg) h s l / 90%);
+
+    /* dark */
+    --red: hsl(0 var(--sat) var(--dark));
+    --orange: hsl(35 var(--sat) var(--dark));
+    --yellow: hsl(60 var(--sat) var(--dark));
+    --green: hsl(100 var(--sat) var(--dark));
+    --turquoise: hsl(180 var(--sat) var(--dark));
+    --blue: hsl(200 var(--sat) var(--dark));
+    --purple: hsl(280 var(--sat) var(--dark));
+    --pink: hsl(300 var(--sat) var(--dark));
+
+    /* light */
+    --red-light: hsl(from var(--red) h s var(--light));
+    --orange-light: hsl(from var(--orange) h s var(--light));
+    --yellow-light: hsl(from var(--yellow) h s var(--light));
+    --green-light: hsl(from var(--green) h s var(--light));
+    --turquoise-light: hsl(from var(--turquoise) h s var(--light));
+    --blue-light: hsl(from var(--blue) h s var(--light));
+    --purple-light: hsl(from var(--purple) h s var(--light));
+    --pink-light: hsl(from var(--pink) h s var(--light));
+
+    /* cinny specific aliases */
+    --hover: var(--style-dark25);
+    --select: var(--style-dark20);
     --hyperlink: var(--blue-light)
+
 }
