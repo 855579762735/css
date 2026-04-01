@@ -1,0 +1,155 @@
+/* -- logseq -- */
+
+@import url('file:///full/path/to/root.css');
+
+.dark-theme,
+html[data-theme=dark],
+html.dark {
+
+  --accent-color: none;
+
+  --ls-primary-background-color: var(--style-backg);
+  --ls-secondary-background-color: var(--style-foreg);
+  --ls-tertiary-background-color: var(--style-foreg);
+  --ls-quaternary-background-color: var(--style-dark);
+  --ls-quinary-background-color: var(--style-backg);
+
+  --ls-active-primary-color: var(--hover);
+  --ls-active-secondary-color: var(--select);
+
+  --ls-primary-text-color: var(--style-text);
+  --ls-secondary-text-color: var(--style-text);
+
+  --ls-search-background-color: var(--style-backg);
+  --ls-border-color: var(--style-dark);
+  --ls-secondary-border-color: var(--style-dark);
+  --ls-menu-hover-color: var(--hover);
+  --ls-table-tr-even-background-color: var(--style-dark);
+
+  --ls-head-text-color: var(--style-text);
+  --ls-title-text-color: var(--style-text);
+
+  --ls-link-text-color: var(--blue-light);
+  --ls-link-text-hover-color: var(--style-text);
+
+  --ls-link-ref-text-color: var(--blue-light);
+  --ls-link-ref-text-hover-color: var(--style-text);
+  --ls-block-ref-link-text-color: var(--blue-light);
+
+  --ls-tag-text-color: var(--blue-light);
+  --ls-tag-text-hover-color: var(--style-text);
+
+  --ls-block-bullet-border-color: var(--style-dark);
+  --ls-block-bullet-color: var(--style-text);
+  --ls-block-highlight-color: var(--style-dark);
+  --ls-block-properties-background-color: var(--style-dark);
+
+  --ls-page-checkbox-color: var(--hidden);
+  --ls-page-checkbox-border-color: var(--style-dark);
+
+  --ls-page-blockquote-color: var(--style-light);
+  --ls-page-blockquote-bg-color: var(--style-backg);
+  --ls-page-blockquote-border-color: var(--style-light);
+
+  --ls-page-inline-code-color: var(--style-text);
+  --ls-page-inline-code-bg-color: var(--style-dark);
+
+  --ls-scrollbar-background-color: var(--style-foreg);
+  --ls-scrollbar-foreground-color: var(--style-dark);
+  --ls-scrollbar-thumb-hover-color: var(--style-dark);
+
+  --ls-icon-color: var(--style-text);
+  --ls-search-icon-color: var(--style-text);
+  --ls-a-chosen-bg: var(--style-black);
+  --ls-right-sidebar-code-bg-color: var(--style-backg);
+  --ls-selection-background-color: var(--select);
+  --ls-slide-background-color: var(--style-backg);
+  --ls-guideline-color: var(--style-dark);
+
+  --color-yellow-500: var(--yellow);
+  --ls-highlight-color-yellow: var(--yellow);
+  --color-red-500: var(--red);
+  --ls-highlight-color-red: var(--red);
+  --color-pink-500: var(--pink);
+  --ls-highlight-color-pink: var(--pink);
+  --color-green-500: var(--green);
+  --ls-highlight-color-green: var(--green);
+  --color-blue-500: var(--blue);
+  --ls-highlight-color-blue: var(--blue);
+  --color-purple-500: var(--purple);
+  --ls-highlight-color-purple: var(--purple);
+  --color-gray-500: var(--rgbset);
+  --ls-highlight-color-gray: var(--rgbset);
+
+  --rx-gray-04: var(--style-dark);
+
+  --ls-page-properties-background-color: var(--style-light);
+  --ls-tertiary-border-color: var(--style-light);
+  --ls-selection-text-color: var(--hover);
+
+  --ls-page-mark-color: var(--style-backg);
+  --ls-page-mark-bg-color: var(--yellow-light);
+  --ls-cloze-text-color: var(--green-light);
+  --ls-pie-bg-color: var(--style-backg);
+  --ls-pie-fg-color: var(--style-foreg);
+  --ls-error-text-color: var(--red-light);
+  --ls-error-background-color: var(--red);
+  --ls-warning-text-color: var(--orange-light);
+  --ls-warning-background-color: var(--orange);
+  --ls-success-text-color: var(--green-light);
+  --ls-success-background-color: var(--green);
+
+  --ls-focus-ring-color: var(--style-dark);
+  --ls-header-button-background: var(--style-text);
+  --ls-left-sidebar-text-color: var(--style-text);
+  --ls-button-background-hsl: var(--hover);
+
+  --color-level-4: var(--style-backg);
+  --color-level-5: var(--style-foreg);
+  --color-level-6: var(--style-dark);
+
+}
+
+.dark-theme .block-content tr:nth-child(2n),
+.dark-theme .cp__all_pages-content tr:nth-child(2n),
+.dark-theme .cp__shortcut-page tr:nth-child(2n) {
+
+  background: var(--style-foreg);
+
+}
+
+.bg-orange-400 {
+
+  background-color: var(--orange-light);
+
+}
+
+.bg-green-600 {
+
+  background-color: var(--green-light);
+
+}
+
+.bg-red-500 {
+
+  background-color: var(--red-light);
+
+}
+
+.external-link {
+
+  color: var(--turquoise-light);
+
+}
+
+.external-link:hover {
+
+  color: var(--turquoise-light);
+
+}
+
+.text-inverted {
+
+  color: var(--style-backg);
+
+}
