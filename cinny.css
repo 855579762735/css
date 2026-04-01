@@ -1,5 +1,6 @@
 /* https://app.cinny.in */
 /* dark theme */
+
 .dark-theme,
 .butter-theme {
     --bg-surface: var(--style-backg);
@@ -14,11 +15,11 @@
     --bg-primary: var(--style-text);
     --bg-primary-hover: var(--style-text);
     --bg-primary-active: var(--style-text);
-    --bg-primary-border: var(--style-light);
+    --bg-primary-border: var(--style-dark25);
     --bg-positive: var(--green-light);
     --bg-positive-hover: var(--hover);
     --bg-positive-active: var(--select);
-    --bg-positive-border: var(--style-light);
+    --bg-positive-border: var(--style-dark25);
     --bg-caution: rgb(227, 186, 145);
     --bg-caution-hover: rgba(227, 186, 145, 8%);
     --bg-caution-active: rgba(227, 186, 145, 15%);
@@ -90,16 +91,16 @@
     --oq6d07a: var(--style-foreg);
     --oq6d07b: var(--hover);
     --oq6d07c: var(--select);
-    --oq6d07d: var(--style-light);
+    --oq6d07d: var(--style-dark25);
     --oq6d07e: var(--style-text);
     --oq6d07f: var(--style-text);
     --oq6d07g: var(--style-text);
     --oq6d07h: var(--style-text);
     --oq6d07i: var(--purple-light);
     --oq6d07j: var(--style-backg);
-    --oq6d07k: var(--style-dark);
-    --oq6d07l: var(--style-dark);
-    --oq6d07m: var(--style-dark);
+    --oq6d07k: var(--style-dark20);
+    --oq6d07l: var(--style-dark20);
+    --oq6d07m: var(--style-dark20);
     --oq6d07n: var(--style-backg);
     --oq6d07o: var(--style-text);
     --oq6d07p: var(--style-text);
@@ -107,7 +108,7 @@
     --oq6d07r: var(--style-text);
     --oq6d07s: var(--style-text);
     --oq6d07t: var(--style-backg);
-    --oq6d07u: var(--style-dark);
+    --oq6d07u: var(--style-dark20);
     --oq6d07v: var(--hover);
     --oq6d07w: var(--select);
     --oq6d07x: var(--select);
@@ -123,13 +124,13 @@
     --oq6d0717: var(--style-backg);
     --oq6d0718: var(--style-text);
     --oq6d0719: var(--red-light);
-    --oq6d071a: #DFAF7E;
-    --oq6d071b: #DDA975;
-    --oq6d071c: #DAA36C;
-    --oq6d071d: #3F2A15;
-    --oq6d071e: var(--red);
-    --oq6d071f: #694624;
-    --oq6d071g: #734D27;
+    --oq6d071a: var(--green-light);
+    --oq6d071b: var(--green-light);
+    --oq6d071c: var(--green);
+    --oq6d071d: var(--style-backg);
+    --oq6d071e: var(--style-backg);
+    --oq6d071f: var(--style-backg);
+    --oq6d071g: var(--style-backg);
     --oq6d071h: var(--red);
     --oq6d071i: var(--style-text);
     --oq6d071j: var(--style-text);
