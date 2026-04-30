@@ -1,44 +1,42 @@
 :root {
 
-    /* spec */
-    --dark: 35;
-    --light: 65;
-    --sat: 50;
+  /* spec */
+  --font-family: monospace;
+  --font-size: 16px;
+  --page-width: 900px;
+  --dark: 35;
+  --light: 65;
+  --sat: 50;
 
-    /* style */
-    --style: hsl(204 11 0);
-    --style-text: hsl(from var(--style) h s 90);
-    --style-light: hsl(from var(--style) h s var(--light));
-    --style-dark: hsl(from var(--style) h s var(--dark));
-    --style-dark25: hsl(from var(--style) h s 25);
-    --style-dark20: hsl(from var(--style) h s 20);
-    --style-foreg: hsl(from var(--style) h s 15);
-    --style-backg: hsl(from var(--style) h s 10);
-    --style-blur: hsl(from var(--style-backg) h s l / 90%);
+  /* style */
+  --style: hsl(204 11 0);
+  --style-text: hsl(from var(--style) h s 90);
+  --style-light: hsl(from var(--style) h s var(--light));
+  --style-dark: hsl(from var(--style) h s var(--dark));
+  --style-dark25: hsl(from var(--style) h s 25);
+  --style-dark20: hsl(from var(--style) h s 20);
+  --style-foreg: hsl(from var(--style) h s 15);
+  --style-backg: hsl(from var(--style) h s 10);
+  --style-blur: hsl(from var(--style-backg) h s l / 90%);
 
-    /* dark */
-    --red: hsl(0 var(--sat) var(--dark));
-    --orange: hsl(35 var(--sat) var(--dark));
-    --yellow: hsl(60 var(--sat) var(--dark));
-    --green: hsl(100 var(--sat) var(--dark));
-    --turquoise: hsl(180 var(--sat) var(--dark));
-    --blue: hsl(200 var(--sat) var(--dark));
-    --purple: hsl(280 var(--sat) var(--dark));
-    --pink: hsl(300 var(--sat) var(--dark));
+  /* dark */
+  --red: hsl(0 var(--sat) var(--dark));
+  --orange: hsl(35 var(--sat) var(--dark));
+  --yellow: hsl(60 var(--sat) var(--dark));
+  --green: hsl(100 var(--sat) var(--dark));
+  --turquoise: hsl(180 var(--sat) var(--dark));
+  --blue: hsl(200 var(--sat) var(--dark));
+  --purple: hsl(280 var(--sat) var(--dark));
+  --pink: hsl(300 var(--sat) var(--dark));
 
-    /* light */
-    --red-light: hsl(from var(--red) h s var(--light));
-    --orange-light: hsl(from var(--orange) h s var(--light));
-    --yellow-light: hsl(from var(--yellow) h s var(--light));
-    --green-light: hsl(from var(--green) h s var(--light));
-    --turquoise-light: hsl(from var(--turquoise) h s var(--light));
-    --blue-light: hsl(from var(--blue) h s var(--light));
-    --purple-light: hsl(from var(--purple) h s var(--light));
-    --pink-light: hsl(from var(--pink) h s var(--light));
-
-    /* cinny specific aliases */
-    --hover: var(--style-dark25);
-    --select: var(--style-dark20);
-    --hyperlink: var(--blue-light)
+  /* light */
+  --red-light: hsl(from var(--red) h s var(--light));
+  --orange-light: hsl(from var(--orange) h s var(--light));
+  --yellow-light: hsl(from var(--yellow) h s var(--light));
+  --green-light: hsl(from var(--green) h s var(--light));
+  --turquoise-light: hsl(from var(--turquoise) h s var(--light));
+  --blue-light: hsl(from var(--blue) h s var(--light));
+  --purple-light: hsl(from var(--purple) h s var(--light));
+  --pink-light: hsl(from var(--pink) h s var(--light));
 
 }
