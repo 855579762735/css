@@ -2,12 +2,6 @@
 
 @import url('file:///full/path/to/root.css');
 
-:root {
-
-  --right-sidebar-width: 350px;
-
-}
-
 /* -- dark theme overrides -- */
 
 .dark-theme,
@@ -126,6 +120,22 @@ html.dark {
 
 }
 
+.dark-theme .left-sidebar-resizer:hover,
+.dark-theme .left-sidebar-resizer:active,
+.dark-theme .resizer:hover,
+.dark-theme .resizer:active {
+
+  background-color: var(--style-dark) !important;
+
+}
+
+.dark-theme .left-sidebar-resizer:focus,
+.dark-theme .resizer:focus {
+
+  background-color: var(--style-light) !important;
+ 
+}
+
 /* -- standard color adjustments -- */
 
 .bg-orange-400 {
@@ -226,22 +236,5 @@ a.tag[data-ref="breaking"] {
 .ls-block h2 {
 
   padding-top: var(--font-size);
-
-}
-
-/* -- sidebar tweaks -- */
-
-.cp__right-sidebar,
-.h-screen,
-.open {
-
-  width: var(--right-sidebar-width) !important;
-
-}
-
-.cp__right-sidebar-scrollable {
-
-  background-color: var(--style-backg);
-  height: 100%;
 
 }
