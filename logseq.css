@@ -2,6 +2,14 @@
 
 @import url('file:///full/path/to/root.css');
 
+:root {
+
+  --right-sidebar-width: 350px;
+
+}
+
+/* -- dark theme overrides -- */
+
 .dark-theme,
 html[data-theme=dark],
 html.dark {
@@ -118,6 +126,8 @@ html.dark {
 
 }
 
+/* -- standard color adjustments -- */
+
 .bg-orange-400 {
 
   background-color: var(--orange-light);
@@ -151,5 +161,87 @@ html.dark {
 .text-inverted {
 
   color: var(--style-backg);
+
+}
+
+/* -- stlyed tags -- */
+
+a.tag[data-ref="flags"] {
+
+  color: var(--purple-light);
+
+}
+
+a.tag[data-ref="tasks"] {
+
+  color: var(--green-light);
+
+}
+
+a.tag[data-ref="critical"],
+a.tag[data-ref="priority"],
+a.tag[data-ref="major"] {
+
+  color: var(--red-light);
+
+}
+
+a.tag[data-ref="concealed"],
+a.tag[data-ref="slow"],
+a.tag[data-ref="breaking"] {
+
+  color: var(--yellow-light);
+
+}
+
+/* -- change image formatting -- */
+
+.block-content .asset-container img {
+
+  border-radius: var(--font-size);
+
+}
+
+.block-content .asset-container .asset-overlay {
+
+  background-image: none;
+
+}
+
+.block-content .asset-container .asset-action-bar {
+
+  background-color: var(--style-blur);
+  border: none;
+
+}
+
+.resize {
+
+  resize: none;
+
+}
+
+/* -- heading paddings -- */
+
+.ls-block h2 {
+
+  padding-top: var(--font-size);
+
+}
+
+/* -- sidebar tweaks -- */
+
+.cp__right-sidebar,
+.h-screen,
+.open {
+
+  width: var(--right-sidebar-width) !important;
+
+}
+
+.cp__right-sidebar-scrollable {
+
+  background-color: var(--style-backg);
+  height: 100%;
 
 }
