@@ -2,11 +2,23 @@
 
 @import url('file:///full/path/to/root.css');
 
-/* -- dark theme overrides -- */
+/* -- correct color scheme problems arising from javascript -- */
 
-.dark-theme,
-html[data-theme=dark],
-html.dark {
+html[data-theme=dark] {
+
+  color-scheme: dark !important;
+
+}
+
+html[data-theme=light] {
+
+  color-scheme: light !important;
+
+}
+
+/* -- dark none theme overrides -- */
+
+html[data-theme=dark][data-color="none"] {
 
   --accent-color: none;
 
@@ -26,7 +38,7 @@ html.dark {
   --ls-border-color: var(--style-dark);
   --ls-secondary-border-color: var(--style-dark);
   --ls-menu-hover-color: var(--hover);
-  --ls-table-tr-even-background-color: var(--style-dark);
+  --ls-table-tr-even-background-color: var(--style-foreg);
 
   --ls-head-text-color: var(--style-text);
   --ls-title-text-color: var(--style-text);
@@ -112,65 +124,60 @@ html.dark {
 
 }
 
-.dark-theme .block-content tr:nth-child(2n),
-.dark-theme .cp__all_pages-content tr:nth-child(2n),
-.dark-theme .cp__shortcut-page tr:nth-child(2n) {
+html[data-theme=dark][data-color="none"].dark-theme .block-content tr:nth-child(2n),
+html[data-theme=dark][data-color="none"].dark-theme .cp__all_pages-content tr:nth-child(2n),
+html[data-theme=dark][data-color="none"].dark-theme .cp__shortcut-page tr:nth-child(2n) {
 
   background: var(--style-foreg);
 
 }
 
-.dark-theme .left-sidebar-resizer:hover,
-.dark-theme .left-sidebar-resizer:active,
-.dark-theme .resizer:hover,
-.dark-theme .resizer:active {
+html[data-theme=dark][data-color="none"].dark-theme .left-sidebar-resizer:hover,
+html[data-theme=dark][data-color="none"].dark-theme .left-sidebar-resizer:active,
+html[data-theme=dark][data-color="none"].dark-theme .resizer:hover,
+html[data-theme=dark][data-color="none"].dark-theme .resizer:active {
 
   background-color: var(--style-dark) !important;
 
 }
 
-.dark-theme .left-sidebar-resizer:focus,
-.dark-theme .resizer:focus {
+html[data-theme=dark][data-color="none"].dark-theme .left-sidebar-resizer:focus,
+html[data-theme=dark][data-color="none"].dark-theme .resizer:focus {
 
   background-color: var(--style-light) !important;
- 
+
 }
 
-/* -- standard color adjustments -- */
+/* -- color tweaks -- */
 
 .bg-orange-400 {
 
-  background-color: var(--orange-light);
+  background-color: light-dark(var(--orange),var(--orange-light));
 
 }
 
 .bg-green-600 {
 
-  background-color: var(--green-light);
+  background-color: light-dark(var(--green),var(--green-light));
 
 }
 
 .bg-red-500 {
 
-  background-color: var(--red-light);
+  background-color: light-dark(var(--red),var(--red-light));
 
 }
 
-.external-link {
-
-  color: var(--turquoise-light);
-
-}
-
+.external-link,
 .external-link:hover {
 
-  color: var(--turquoise-light);
+  color: light-dark(var(--turquoise),var(--turquoise-light));
 
 }
 
 .text-inverted {
 
-  color: var(--style-backg);
+  color: light-dark(var(--style-text),var(--style-backg));
 
 }
 
@@ -178,13 +185,13 @@ html.dark {
 
 a.tag[data-ref="flags"] {
 
-  color: var(--purple-light);
+  color: light-dark(var(--purple),var(--purple-light));
 
 }
 
 a.tag[data-ref="tasks"] {
 
-  color: var(--green-light);
+  color: light-dark(var(--green),var(--green-light));
 
 }
 
@@ -192,7 +199,7 @@ a.tag[data-ref="critical"],
 a.tag[data-ref="priority"],
 a.tag[data-ref="major"] {
 
-  color: var(--red-light);
+  color: light-dark(var(--red),var(--red-light));
 
 }
 
@@ -200,7 +207,7 @@ a.tag[data-ref="concealed"],
 a.tag[data-ref="slow"],
 a.tag[data-ref="breaking"] {
 
-  color: var(--yellow-light);
+  color: light-dark(var(--yellow),var(--yellow-light));
 
 }
 
@@ -212,6 +219,12 @@ a.tag[data-ref="breaking"] {
 
 }
 
+.block-content .asset-container img {
+
+  border: 1px solid light-dark(var(--ls-primary-text-color),var(--ls-primary-background-color));
+
+}
+
 .block-content .asset-container .asset-overlay {
 
   background-image: none;
@@ -220,8 +233,10 @@ a.tag[data-ref="breaking"] {
 
 .block-content .asset-container .asset-action-bar {
 
-  background-color: var(--style-blur);
+  background-color: var(--ls-secondary-background-color);
   border: none;
+  border-top-left-radius: var(--font-size);
+  border-top-right-radius: var(--font-size);
 
 }
 
