@@ -39,4 +39,9 @@
   --purple-light: hsl(from var(--purple) h s var(--light));
   --pink-light: hsl(from var(--pink) h s var(--light));
 
+  /* cinny specific aliases */
+  --hover: var(--style-dark25);
+  --select: var(--style-dark20);
+  --hyperlink: var(--blue-light);
+
 }
