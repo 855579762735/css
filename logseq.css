@@ -1,6 +1,6 @@
 /* -- logseq -- */
 
-@import url('file:///full/path/to/root.css');
+@import url('file:///Z:/Users/popularpanda/notes/root/css/root.css');
 
 /* -- correct color scheme problems arising from javascript -- */
 
@@ -63,7 +63,7 @@ html[data-theme=dark][data-color="none"] {
 
   --ls-page-blockquote-color: var(--style-light);
   --ls-page-blockquote-bg-color: var(--style-backg);
-  --ls-page-blockquote-border-color: var(--style-light);
+  --ls-page-blockquote-border-color: var(--style-dark);
 
   --ls-page-inline-code-color: var(--style-text);
   --ls-page-inline-code-bg-color: var(--style-dark);
@@ -124,6 +124,14 @@ html[data-theme=dark][data-color="none"] {
 
 }
 
+html[data-theme=dark][data-color="none"] .references-blocks-item {
+
+  --ls-page-blockquote-color: var(--style-light);
+  --ls-page-blockquote-bg-color: var(--style-foreg);
+  --ls-page-blockquote-border-color: var(--style-light);
+
+}
+
 html[data-theme=dark][data-color="none"].dark-theme .block-content tr:nth-child(2n),
 html[data-theme=dark][data-color="none"].dark-theme .cp__all_pages-content tr:nth-child(2n),
 html[data-theme=dark][data-color="none"].dark-theme .cp__shortcut-page tr:nth-child(2n) {
@@ -148,50 +156,65 @@ html[data-theme=dark][data-color="none"].dark-theme .resizer:focus {
 
 }
 
+html[data-theme=dark][data-color="none"] blockquote {
+
+  border-color: var(--ls-page-blockquote-border-color);
+
+}
+
 /* -- color tweaks -- */
 
 .bg-orange-400 {
 
-  background-color: light-dark(var(--orange),var(--orange-light));
+  background-color: light-dark(var(--orange), var(--orange-light));
 
 }
 
 .bg-green-600 {
 
-  background-color: light-dark(var(--green),var(--green-light));
+  background-color: light-dark(var(--green), var(--green-light));
 
 }
 
 .bg-red-500 {
 
-  background-color: light-dark(var(--red),var(--red-light));
+  background-color: light-dark(var(--red), var(--red-light));
 
 }
 
 .external-link,
 .external-link:hover {
 
-  color: light-dark(var(--turquoise),var(--turquoise-light));
+  color: light-dark(var(--turquoise), var(--turquoise-light));
 
 }
 
 .text-inverted {
 
-  color: light-dark(var(--style-text),var(--style-backg));
+  color: light-dark(var(--style-text), var(--style-backg));
 
 }
 
 /* -- stlyed tags -- */
 
-a.tag[data-ref="flags"] {
+a.tag {
 
-  color: light-dark(var(--purple),var(--purple-light));
+  text-transform: lowercase !important;
+  font-family: monospace;
+  font-size: 16px;
 
 }
 
-a.tag[data-ref="tasks"] {
+a.tag[data-ref="flags"] {
 
-  color: light-dark(var(--green),var(--green-light));
+  color: light-dark(var(--purple), var(--purple-light));
+
+}
+
+a.tag[data-ref="tasks"],
+a[href^="mailto:"] {
+
+  color: light-dark(var(--green), var(--green-light));
 
 }
 
@@ -199,7 +222,7 @@ a.tag[data-ref="critical"],
 a.tag[data-ref="priority"],
 a.tag[data-ref="major"] {
 
-  color: light-dark(var(--red),var(--red-light));
+  color: light-dark(var(--red), var(--red-light));
 
 }
 
@@ -207,7 +230,7 @@ a.tag[data-ref="concealed"],
 a.tag[data-ref="slow"],
 a.tag[data-ref="breaking"] {
 
-  color: light-dark(var(--yellow),var(--yellow-light));
+  color: light-dark(var(--yellow), var(--yellow-light));
 
 }
 
@@ -219,9 +242,10 @@ a.tag[data-ref="breaking"] {
 
 }
 
-.block-content .asset-container img {
+.block-content .asset-container img,
+.block-content .asset-container .asset-action-bar {
 
-  border: 1px solid light-dark(var(--ls-primary-text-color),var(--ls-primary-background-color));
+  border: 1px solid light-dark(var(--ls-primary-text-color), var(--ls-primary-background-color));
 
 }
 
@@ -234,7 +258,6 @@ a.tag[data-ref="breaking"] {
 .block-content .asset-container .asset-action-bar {
 
   background-color: var(--ls-secondary-background-color);
-  border: none;
   border-top-left-radius: var(--font-size);
   border-top-right-radius: var(--font-size);
 
