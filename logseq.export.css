@@ -8,7 +8,7 @@
 
 /* -- export tweaks -- */
 
-button[title="More"],
+button[title="More"].toolbar-dots-btn,
 .content .pre-block,
 .nav-header .whiteboard,
 /*.nav-header .journals-nav,*/
@@ -25,7 +25,9 @@ a.delete,
 .graph-filters,
 .nav-content-item.recent,
 .nav-content-item.favorites,
-#custom-context-menu {
+#custom-context-menu,
+.cp__footer button:first-child,
+.cp__footer button:last-child {
 
   display: none !important;
 
